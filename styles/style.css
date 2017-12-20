@@ -1,9 +1,55 @@
 body {
-
+	font-family: arial;
 }
 
 form {
 	
+}
+
+.navbar {
+	position:relative;
+	display: block;
+	height: 50px;
+	text-align: right;
+	bottom: 1px;
+}
+
+.navbar a {
+	color: rgba(0, 0, 0, .9);
+	font-size: 13px;
+	text-decoration: none;
+	position:relative;
+	top: 12px;
+	margin-right: 12px;
+}
+
+.navbar a:hover {
+	text-decoration: underline;	
+}
+
+.menuIcon {
+	display: inline-block;
+	opacity: 0.6;
+	position: relative;
+	width: 24px;
+	top: 20px;
+	margin-right: 12px;
+}
+
+.navbar a.button {
+	position:relative;
+	padding: 6px 12px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+	border: 1px solid #4285f4;
+	border-radius: 3px;
+	background-color: #4285f4;
+	margin-right: 30px;
+}
+
+.navbar a.button:hover {
+	text-decoration: none;
+	cursor: default;
 }
 
 input {
@@ -12,7 +58,7 @@ input {
 	background-origin: content-box;
 	background-repeat: no-repeat;
 	background-position: bottom 9px left 530px;
-	display:block;
+	display: inline-block;
 	position: absolute;
 	width: 510px;
 	height: 40px;
@@ -21,27 +67,31 @@ input {
 	border-width: 1px;
 	border-radius: 1px;
 	border-color: rgba(0, 0, 0, 0.1);
-	left: 40%;
-	top: 320px;
+	top: 317px;
 	box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2);
+	margin-left: 45%;
+	margin-right: 55%;
+	left: -143px;
 }
 
 input:focus {
 	outline-width: 0;
-	box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 7px 1px rgba(0, 0, 0, .2);
 }
 
 input:hover {
-	box-shadow: 0px 2px 7px 1px rgba(0, 0, 0, .2);
+	box-shadow: 0 2px 7px 1px rgba(0, 0, 0, .2);
 }
 
 .logo {
 	padding-left: 157px;
 	padding-right: 157px;
-	display: block;
-	position: relative;
-	left: 40%;
+	margin-left: 45%;
+	margin-right: 55%;
+	display: inline-block;
+	position: absolute;
 	top: 198px;
+	left: -148px;
 }
 
 
