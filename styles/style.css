@@ -1,9 +1,10 @@
-body {
-	font-family: arial;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-form {
-	
+body {
+	font-family: arial;	
 }
 
 .navbar {
@@ -27,13 +28,18 @@ form {
 	text-decoration: underline;	
 }
 
-.menuIcon {
+.navbar .menuIcon {
 	display: inline-block;
 	opacity: 0.6;
 	position: relative;
 	width: 24px;
 	top: 20px;
 	margin-right: 12px;
+}
+
+.navbar .menuIcon:Hover {
+	opacity: 1;
+	cursor: pointer;
 }
 
 .navbar a.button {
@@ -72,6 +78,7 @@ input {
 	margin-left: 45%;
 	margin-right: 55%;
 	left: -143px;
+	overflow: hidden;
 }
 
 input:focus {
@@ -92,7 +99,34 @@ input:hover {
 	position: absolute;
 	top: 198px;
 	left: -148px;
+	overflow: hidden;
 }
 
+.footer {
+	width: 100%;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	background-color: grey;
+}
 
+#language {
+	bottom: 50px;
+}
 
+#leftside, #rightside {
+	display: inline;
+	font-size: 13px;
+}
+
+#rightside {
+	float: right;
+}
+
+#leftside a {
+	margin-left: 25px;
+}
+
+#rightside a {
+	margin-right: 25px;
+}
