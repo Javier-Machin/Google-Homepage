@@ -1,11 +1,5 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
 body {
-	font-family: arial;	
+	font-family: arial;
 }
 
 a {
@@ -13,7 +7,6 @@ a {
 }
 
 .navbar {
-	display: block;
 	width: 100%;
 	height: 50px;
 	text-align: right;
@@ -24,26 +17,23 @@ a {
 	margin-top: 5px;
 	margin-right: 10px;
 	padding: 3px;
-}
-
-.navbar a {
 	color: rgba(0, 0, 0, .9);
 }
 
-.navbar .link:hover {
+.link:hover {
 	text-decoration: underline;
 }
 
-.navbar .menuIcon {
+.menuIcon {
 	position: relative;
 	width: 24px;
 	opacity: 0.6;
 	top: 11px;
+	cursor: pointer;
 }
 
-.navbar .menuIcon:hover {
+.menuIcon:hover {
 	opacity: 1;
-	cursor: pointer;
 }
 
 .navbar .button {
@@ -54,22 +44,81 @@ a {
 	background-color: #4285f4;
 	font-weight: bold;
 	margin-right: 30px;
-}
-
-.navbar .button:hover {
 	cursor: default;
 }
 
 .searchcontainer {
-	display: block;
 	width: 100%;
 	text-align: center;
 	font-size: 13px;
-	margin-top: 230px;
+	margin-top: 170px;
+}
+
+.logo {
+	position: relative;
+	bottom: 23px;
+}
+
+.searchbar {
+	display: inline-block;
+	position: relative;
+	left: 5px;
+	width: 590px;
+	height: 44px;
+	box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, .2);
+}
+
+.micIcon {
+	position: relative;
+	bottom: 21px;
+	float: right;
+	right: 13px;
+}
+
+.micIcon img {
+	width: 24px;
+}
+
+input {
+	outline: none;
+	border: none;
+	margin: 12px 40px 0 0;
+	font-size: 16px;
+	position: relative;
+	width: 510px;
+}
+
+.searchbuttons .button {
+	font-weight: bold;
+	display: inline-block;
+	padding: 10px 16px;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	margin: 33px 4px 0 0;
+	background-color: #f2f2f2;
+	color: rgba(0, 0, 0, .5);
+	cursor: default;
+}
+
+.searchbuttons .button:hover {
+	color: rgba(0, 0, 0, .9);
+	border: 1px solid rgba(0, 0, 0, .3);
+}
+
+.languageOptions {
+	margin-top: 30px;
+}
+
+.languageOptions a {
+	color: #1a0dab;
+	margin: 0 2px;
+}
+
+.languageOptions a:hover {
+	text-decoration: underline;
 }
 
 footer {
-	display: block;
 	width: 100%;
 	position: absolute;
 	bottom: 0px;
@@ -78,37 +127,40 @@ footer {
 	border-top: 1px solid #e4e4e4;
 }
 
-footer.links #leftside, footer.links #rightside {
+#leftside, #rightside {
 	display: inline;
 	font-size: small;
 	margin-left: 5px;
 }
 
-footer.links #leftside a {
+#leftside a {
 	position: relative;
 	margin-left: 24px;
 	top: 10px;
 	color: rgba(0, 0, 0, .6);
 }
 
-footer.links #rightside a {
+#rightside a:hover, #leftside a:hover {
+	text-decoration: underline;
+}
+
+#rightside a {
 	position: relative;
 	margin-right: 24px;
 	top: 10px;
 	color: rgba(0, 0, 0, .6);
 }
 
-
-footer.links #rightside {
+#rightside {
 	float: right;
 	margin-right: 5px;
 }
 
-footer.country {
+.country {
 	margin-bottom: 41px;
 }
 
-footer.country p {
+.country p {
 	position: relative;
 	margin-left: 30px;
 	bottom: 5px;
